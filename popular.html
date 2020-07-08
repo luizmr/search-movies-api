@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Movie Search</title>
+        <!-- bootstrap theme -->
+        <link
+            rel="stylesheet"
+            href="https://bootswatch.com/4/superhero/bootstrap.min.css"
+        />
+        <!-- css -->
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <nav
+            class="navbar navbar-default"
+            style="margin-bottom: 2rem; padding-top: 1rem;"
+        >
+            <div class="container">
+                <div class="navbar-header">
+                    <a
+                        href="index.html"
+                        class="navbar-brand btn-primary btn"
+                        style="border-radius: 0.5rem;"
+                        >Search Movies</a
+                    >
+                    <a
+                        href="toprated.html"
+                        class="navbar-brand btn btn-primary"
+                        style="border-radius: 0.5rem;"
+                        >Top Rated</a
+                    >
+                    <a
+                        href="nowplaying.html"
+                        class="navbar-brand btn btn-primary"
+                        style="border-radius: 0.5rem;"
+                        >Now Playing</a
+                    >
+                    <a
+                        href="upcoming.html"
+                        class="navbar-brand btn btn-primary"
+                        style="border-radius: 0.5rem;"
+                        >Upcoming</a
+                    >
+                    <a
+                        href="popular.html"
+                        class="navbar-brand btn btn-primary active-link"
+                        style="border-radius: 0.5rem;"
+                        >Popular</a
+                    >
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="jumbotron">
+                <h3 class="text-center">Page Number</h3>
+                <form id="numberFormPopular">
+                    <div class="row">
+                        <div class="col-md-10 px-0">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Insert a page number . . . "
+                                id="searchNumberPopular"
+                            />
+                        </div>
+                        <div class="col-md-2 px-0">
+                            <button
+                                class="btn btn-primary w-100 h-100 text-uppercase"
+                                style="
+                                    border-radius: 0 0.5rem 0.5rem 0;
+                                    font-size: 1rem;
+                                    letter-spacing: 0.2rem;
+                                "
+                                type="submit"
+                            >
+                                search
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="movies" class="row"></div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            made with love by Luiz Marcelo Rocha
+        </footer>
+
+        <!-- jquery -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"
+        ></script>
+        <!-- axios -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!-- main js -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

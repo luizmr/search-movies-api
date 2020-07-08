@@ -1,0 +1,48 @@
+/* styles */
+
+#movies img,
+#movie img {
+    width: 100%;
+    border-radius: 2%;
+    margin-bottom: 1rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0.5rem 1rem;
+}
+.active-link {
+    border: 1px solid white;
+    background-color: #c13100;
+    transform: scale(1.1);
+}
+a:hover,
+button:hover {
+    background-color: #c13100 !important;
+    border: 1px solid white !important;
+    transform: scale(1.05);
+}
+.back-search:hover {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 2px solid white !important;
+}
+
+/* media query */
+
+@media screen and (min-width: 960px) {
+    #movies .col-md-3 .well {
+        height: 450px;
+    }
+
+    #movies .col-md-3 img {
+        height: 300px;
+    }
+}
